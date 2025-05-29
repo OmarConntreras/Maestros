@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>Maestros - Omar Contreras Moreno - Jose Luis Catalan</title>
+</head>
+<body>
+	<center>
+		<font size="5" face="Calibri" color="black">
+
+		<h1>
+			<b> <big>Maestros - Omar Contreras - Jose Luis Catalan</big> </b>
+		</h1>
+
+		<hr><br><br>
+		
+		<table bgcolor="white" border="8" bordercolor="black" width="0%">
+			<tr>
+				<th>Maestros</th>
+			</tr>
+			<tr>
+				<td>
+					<select name="selcciona" size="1" id="varFV" onchange="FV()">
+					<option value="0" selected>Selecciona</option>
+					<option value="1">Mtro. Ricardin</option>
+					<option value="2">Mtro. Cristiano Ronaldo</option>
+					<option value="3">Mtro. Toni Kroos</option>
+					<option value="4">Mtro. Trasqui</option>
+					<option value="5">Mtro. Calep Chinox Zilba</option>
+				
+						
+					</select>
+				</td>
+
+			</tr>
+
+
+		</table>
+
+		<br><a id="ref1"><img id="img" width="260" height="250" border="black"> </a>
+
+		<p style="color: white;" id="imprimir"></p>
+		<h4><p align="center"> Omar Contreras - Jose Luis Catalan</p></h4>
+
+		<script type="text/javascript">
+			function FV() {
+			    var ins = document.getElementById("varFV").value;
+				
+				if (parseInt(ins)== 0) {
+					document.getElementById("img").src= "img/.jpg";
+					document.getElementById("ref1").href= "";
+					document.getElementById("imprimir").innerHTML= "Seleccionar opcion";
+				}	
+				if (parseInt(ins)== 1) {
+					document.getElementById("img").src= "img/ricardin.jpg";
+					document.getElementById("ref1").href= "Lengua y Comunicacion.html";
+					document.getElementById("imprimir").innerHTML ="Lengua y Comunicacion";
+				}
+			
+
+			if (parseInt(ins)== 2) {
+					document.getElementById("img").src= "img/CR7.jpg";
+					document.getElementById("ref1").href= "Matematicas.html";
+					document.getElementById("imprimir").innerHTML ="Matematicas";
+				}
+					if (parseInt(ins)== 3) {
+					document.getElementById("img").src= "img/tonikroos.jpg";
+					document.getElementById("ref1").href= "Quimica.html";
+					document.getElementById("imprimir").innerHTML ="Quimica";
+				}
+
+				if (parseInt(ins)== 4) {
+					document.getElementById("img").src= "img/kant.jpg";
+					document.getElementById("ref1").href= "Ciencias Sociales.html";
+					document.getElementById("imprimir").innerHTML ="Ciencias Sociales";
+				}
+
+				if (parseInt(ins)== 5) {
+					document.getElementById("img").src= "img/chinox.jpg";
+					document.getElementById("ref1").href= "Etica.html";
+					document.getElementById("imprimir").innerHTML ="Etica";
+				}
+
+			
+				}
+
+
+			
+
+		</script>
+
+
+	</center>
+
+</body>
+</html>
